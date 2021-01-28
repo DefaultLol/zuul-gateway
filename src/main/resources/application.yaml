@@ -1,3 +1,7 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: https://eureka-disc-service.herokuapp.com/eureka
 server:
   port: 8086
 spring:
