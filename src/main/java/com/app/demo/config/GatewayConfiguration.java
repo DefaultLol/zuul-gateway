@@ -18,7 +18,7 @@ public class GatewayConfiguration extends ResourceServerConfigurerAdapter {
                 .antMatchers("/oauth/**").permitAll()
                 .antMatchers("/morning/**").hasRole("ADMIN")
                 .antMatchers("/**")
-                .authenticated();
+                .permitAll();
     }
 
     @Bean
