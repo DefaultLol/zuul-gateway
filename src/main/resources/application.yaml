@@ -51,7 +51,7 @@ zuul:
       sensitiveHeaders:
       path: /oauth/**
       stripPrefix: false
-      serviceId: oauth-demo
+      url: https://ensaspay-oauth-service.herokuapp.com/
     morningservice:
       sensitiveHeaders:
       path: /morning/**
@@ -60,5 +60,5 @@ zuul:
     accountservice:
       sensitiveHeaders:
       path: /account/**
-      stripPrefix: true
-      url: account-service
+      stripPrefix: false
+      url: https://ensaspay-account-service.herokuapp.com/

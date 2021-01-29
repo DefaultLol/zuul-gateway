@@ -13,12 +13,12 @@ public class GatewayConfiguration extends ResourceServerConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/oauth/**").permitAll()
-                .antMatchers("/morning/**").hasRole("ADMIN")
-                .antMatchers("/**")
-                .permitAll();
+            .csrf().disable()
+            .authorizeRequests()
+            .antMatchers("/oauth/**").permitAll()
+            .antMatchers("/client/**").hasRole("AGENT")
+            .antMatchers("/account/**").hasRole("AGENT")
+                .antMatchers("/cmi/**").hasRole("CLIENT");
     }
 
     @Bean
