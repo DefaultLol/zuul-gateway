@@ -61,4 +61,4 @@ zuul:
       sensitiveHeaders:
       path: /account/**
       stripPrefix: false
-      serviceId: account-service
+      url: https://ensaspay-account-service.herokuapp.com
