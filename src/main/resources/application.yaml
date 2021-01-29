@@ -45,3 +45,8 @@ zuul:
       path: /morning/**
       stripPrefix: false
       serviceId: good-morning
+    accountservice:
+      sensitiveHeaders:
+      path: /account/**
+      stripPrefix: false
+      serviceId: account-service
