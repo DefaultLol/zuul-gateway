@@ -21,7 +21,7 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    /*@Bean
+    @Bean
     public CorsFilter corsFilter() {
         final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         final CorsConfiguration config = new CorsConfiguration();
@@ -37,6 +37,6 @@ public class DemoApplication {
         config.addAllowedMethod("PATCH");
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
-    }*/
+    }
 
 }
