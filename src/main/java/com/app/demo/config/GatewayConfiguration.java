@@ -16,7 +16,7 @@ public class GatewayConfiguration extends ResourceServerConfigurerAdapter {
             .csrf().disable()
             .authorizeRequests()
             .antMatchers("/oauth/**").permitAll()
-            .antMatchers("/api/client/**").permitAll()
+            .antMatchers("/api/client/**").hasRole("AGENT")
             .antMatchers("/api/account/**").permitAll()
                 .antMatchers("/cmi/**").hasRole("CLIENT");
     }

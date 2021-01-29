@@ -13,8 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-//@Component
-public class CROSFilter /*implements Filter*/ {
+@Component
+public class CROSFilter implements Filter {
 
     private final Logger logger = LoggerFactory.getLogger(CROSFilter.class);
 
@@ -22,7 +22,7 @@ public class CROSFilter /*implements Filter*/ {
         logger.info("CROSFilter init");
     }
 
-    //@Override
+    @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
             throws IOException, ServletException {
 
@@ -38,11 +38,11 @@ public class CROSFilter /*implements Filter*/ {
         chain.doFilter(req, res);
     }
 
-    //@Override
+    @Override
     public void init(FilterConfig filterConfig) {
     }
 
-    //@Override
+    @Override
     public void destroy() {
     }
 
