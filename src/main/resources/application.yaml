@@ -1,14 +1,26 @@
 eureka:
   client:
-    service-url:
+    fetch-registry: true
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+    serviceUrl:
       defaultZone: https://eureka-disc-service.herokuapp.com/eureka
-  instance:
-    hostname: zuul-gate-service.herokuapp.com
+
 server:
   port: 8086
 spring:
   application:
     name: zuul-gateway
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
 ribbon:
   ReadTimeout: 60000
 hystrix:
