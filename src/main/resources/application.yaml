@@ -1,11 +1,11 @@
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    healthcheck:
-      enabled: true
-    serviceUrl:
-      defaultZone: https://eureka-disc-service.herokuapp.com/eureka
+#eureka:
+  #client:
+    #fetch-registry: true
+    #register-with-eureka: true
+    #healthcheck:
+      #enabled: true
+    #serviceUrl:
+      #defaultZone: https://eureka-disc-service.herokuapp.com/eureka
 
 server:
   port: 8086
@@ -51,7 +51,7 @@ zuul:
       sensitiveHeaders:
       path: /oauth/**
       stripPrefix: false
-      url: https://ensaspay-oauth-service.herokuapp.com/
+      url: https://ensaspay-oauth-service.herokuapp.com
     morningservice:
       sensitiveHeaders:
       path: /morning/**
@@ -61,4 +61,5 @@ zuul:
       sensitiveHeaders:
       path: /account/**
       stripPrefix: false
-      url: https://ensaspay-account-service.herokuapp.com/
+      url: https://ensaspay-account-service.herokuapp.com
+

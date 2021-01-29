@@ -24,7 +24,7 @@ public class GatewayConfiguration extends ResourceServerConfigurerAdapter {
     @Bean
     public RemoteTokenServices remoteTokenService() {
         RemoteTokenServices tokenService = new RemoteTokenServices();
-        tokenService.setCheckTokenEndpointUrl("http://localhost:9090/oauth/check_token");
+        tokenService.setCheckTokenEndpointUrl("https://ensaspay-oauth-service.herokuapp.com/oauth/check_token");
         tokenService.setClientId("client");
         tokenService.setClientSecret("secret");
         return tokenService;
