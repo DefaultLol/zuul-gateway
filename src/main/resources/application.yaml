@@ -57,6 +57,11 @@ zuul:
       path: /morning/**
       stripPrefix: false
       serviceId: good-morning
+    clientservice:
+      sensitiveHeaders:
+      path: /client/**
+      stripPrefix: false
+      url: https://ensaspay-client-service.herokuapp.com
     accountservice:
       sensitiveHeaders:
       path: /account/**

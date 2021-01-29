@@ -17,7 +17,7 @@ public class GatewayConfiguration extends ResourceServerConfigurerAdapter {
             .authorizeRequests()
             .antMatchers("/oauth/**").permitAll()
             .antMatchers("/client/**").hasRole("AGENT")
-            .antMatchers("/account/**").hasRole("AGENT")
+            .antMatchers("/account/**").permitAll()
                 .antMatchers("/cmi/**").hasRole("CLIENT");
     }
 
