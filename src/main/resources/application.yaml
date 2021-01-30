@@ -67,4 +67,9 @@ zuul:
       path: /api/account/**
       stripPrefix: false
       url: https://ensaspay-account-service.herokuapp.com
+    cmiservice:
+      sensitiveHeaders:
+      path: /soapWS/**
+      stripPrefix: false
+      url: https://ensaspay-cmi-service.herokuapp.com
 

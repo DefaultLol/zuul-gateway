@@ -23,7 +23,7 @@ public class GatewayConfiguration extends ResourceServerConfigurerAdapter {
             .antMatchers("/oauth/**").permitAll()
             .antMatchers("/api/client/**").hasRole("AGENT")
             .antMatchers("/api/account/**").permitAll()
-                .antMatchers("/cmi/**").hasRole("CLIENT").
+                .antMatchers("/soapWS/**").permitAll().
                 anyRequest().authenticated();
     }
 
