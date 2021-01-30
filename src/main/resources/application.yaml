@@ -22,7 +22,7 @@ spring:
           lower-case-service-id: true
 
 ribbon:
-  ReadTimeout: 60000
+  ReadTimeout: 125000
 hystrix:
   command:
     default:
