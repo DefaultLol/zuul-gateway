@@ -71,5 +71,5 @@ zuul:
       sensitiveHeaders:
       path: /soapWS/**
       stripPrefix: false
-      url: https://ensaspay-cmi-service.herokuapp.com
+      url: https://ensapay-cmi-service.herokuapp.com
 
