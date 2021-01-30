@@ -24,7 +24,7 @@ public class GatewayConfiguration extends ResourceServerConfigurerAdapter {
             .antMatchers("/api/client/**").hasRole("AGENT")
             .antMatchers("/api/account/**").permitAll()
                 .antMatchers("/soapWS/**").permitAll().
-                anyRequest().permitAll();
+                anyRequest().authenticated();
     }
 
     @Bean
