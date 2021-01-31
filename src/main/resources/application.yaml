@@ -72,4 +72,9 @@ zuul:
       path: /soapWS/**
       stripPrefix: false
       url: https://ensapay-cmi-service.herokuapp.com
+    iamfakeservice:
+      sensitiveHeaders:
+      path: /iam/**
+      stripPrefix: false
+      url: https://ensapay-iamfakeservice.herokuapp.com
 
