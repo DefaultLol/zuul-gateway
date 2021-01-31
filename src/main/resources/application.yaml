@@ -77,4 +77,14 @@ zuul:
       path: /iam/**
       stripPrefix: false
       url: https://ensapay-iamfakeservice.herokuapp.com
+    agentservice:
+      sensitiveHeaders:
+      path: /agent/**
+      stripPrefix: false
+      url: https://ensapay-agent-service.herokuapp.com
+    agencyservice:
+      sensitiveHeaders:
+      path: /agency/**
+      stripPrefix: false
+      url: https://ensapay-agent-service.herokuapp.com
 
